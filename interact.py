@@ -9,6 +9,7 @@ Created on Thu Feb 14 16:48:21 2019
 import sys
 from bokeh.plotting import figure,output_file,show
 from bokeh.palettes import viridis
+from mpldatacursor import datacursor
 
 txt = sys.argv[1]
 eigenvec = sys.argv[2]
@@ -35,9 +36,12 @@ p=figure(plot_width = 1000,plot_height = 800)
 p.title.text = 'Click on legend entries to hide their data'
 colors=viridis(len(Breeds))
 index=0
+
 for key in Breeds:
-    p.circle(Breeds[key][0],Breeds[key][1], size=3,legend=key,color=colors[index])
+    cir = p.circle(Breeds[key][0],Breeds[key][1], size=3,legend=key,color=colors[index])
     index+=1
+    datacursor(fomatter=key)
+    
 
 p.legend.location="bottom_right"
 p.legend.click_policy="hide"
