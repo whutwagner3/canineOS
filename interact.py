@@ -29,8 +29,9 @@ with open(eigenvec) as fi:
     fi.readline()
     for line in fi:
         text=line.split()
-        Breeds[convert[text[1]]][0].append(float(text[2]))
-        Breeds[convert[text[1]]][1].append(float(text[3]))
+        if text[1] in convert:
+            Breeds[convert[text[1]]][0].append(float(text[2]))
+            Breeds[convert[text[1]]][1].append(float(text[3]))
         
 p=figure(plot_width = 1000,plot_height = 800)
 p.title.text = 'Click on legend entries to hide their data'
