@@ -8,11 +8,13 @@
 
 Located in Chromosome5, NC_006587.3: c63695249-63694296
 From refFlat in iGenomes /Annotation/Genes maybe id is ENSCAFT00000036995
+
 '''
 [Resource determining gene](https://www.ncbi.nlm.nih.gov/pubmed/12692165)
 [NCBI Gene Location](https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=489652)
 [NCBI Gene Sequence](https://www.ncbi.nlm.nih.gov/nuccore/NC_006587.3?report=fasta&from=63694296&to=63695249&strand=true)
 '''
+
 Looked at the 264th amino acid and noticed the reference is Valine (the reference is boxer with black mask) and not Methionine. 
 DNA sequecence for mutation is ATG to GTG: Snp A to G at ..... position in chr 5
 
