@@ -57,8 +57,11 @@ bwa mem Sequence/Chromosomes/5.fa mc1r.fa > mc1r.sam
 samtools view -bSh -o mc1r.bam mc1r.sam 
 samtools sort -o mc1r.sorted.bam mc1r.bam
 bedtools bamtobed -i mc1r.sorted.bam 
+
+bwa index canFam3.fa
+bwa mem canFam3.fa MC1R.fa > MC1R.sam
 ```
-Samtools found only one instance for MC1R in the 5th chromosome
+Samtools found only one instance for MC1R in the 5th chromosome and furthermore, only one instance in the whole genome of canFam3.
 
 ## Checking out illumina array and other 
 Can't really find a good match for A to G at the right spot but...
