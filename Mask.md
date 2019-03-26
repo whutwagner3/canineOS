@@ -11,7 +11,9 @@ From refFlat in iGenomes /Annotation/Genes maybe id is ENSCAFT00000036995
 
 
 [Resource determining gene](https://www.ncbi.nlm.nih.gov/pubmed/12692165)
+
 [NCBI Gene Location](https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=489652)
+
 [NCBI Gene Sequence](https://www.ncbi.nlm.nih.gov/nuccore/NC_006587.3?report=fasta&from=63694296&to=63695249&strand=true)
 
 ```
@@ -59,7 +61,10 @@ samtools sort -o mc1r.sorted.bam mc1r.bam
 bedtools bamtobed -i mc1r.sorted.bam 
 
 bwa index canFam3.fa
-bwa mem canFam3.fa MC1R.fa > MC1R.sam
+bwa mem canFam3.fa MC1R.fa > MC1R_canFam3.sam
+
+bwa index canFam2.fa
+bwa mem canFam2.fa MC1R.fa > MC1R_canFam2.sam
 ```
 Samtools found only one instance for MC1R in the 5th chromosome and furthermore, only one instance in the whole genome of canFam3.
 
