@@ -60,11 +60,11 @@ samtools view -bSh -o mc1r.bam mc1r.sam
 samtools sort -o mc1r.sorted.bam mc1r.bam
 bedtools bamtobed -i mc1r.sorted.bam 
 
-bwa index canFam3.fa
-bwa mem canFam3.fa MC1R.fa > MC1R_canFam3.sam
+bwa index canFam3.1.fa
+bwa mem canFam3.1.fa MC1R.fa > MC1R_canFam3.sam
 
-bwa index canFam2.fa
-bwa mem canFam2.fa MC1R.fa > MC1R_canFam2.sam
+bwa index canFam2.0.fa
+bwa mem canFam2.0.fa MC1R.fa > MC1R_canFam2.sam
 ```
 Samtools found only one instance for MC1R in the 5th chromosome and furthermore, only one instance in the whole genome of canFam3.
 
