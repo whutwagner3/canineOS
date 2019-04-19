@@ -6,6 +6,9 @@ subprocess.call(['mkdir', 'fastq'])
 subprocess.call(['mkdir','temp'])
 subprocess.call(['mkdir','out'])
 named_out=[]
+check1='GCCACACTCACTATCCTGCTGGGCATTTTCTTTCTCTGCTGGGGCCCCTTCTTCTTGCACCTCTCACTCG'
+check2='CTCTTCCTCACCCTCATCATCTGCAACTCCATCATTGACCCCTTCATCTACGCCTTCCGCAGCCAGGAGCTCT'
+
 with open(sralist) as fi:
     for line in fi:
         test = line.split(None,1)
@@ -16,5 +19,8 @@ with open(sralist) as fi:
 subprocess.call(['cd','out'])
 for file in named_out:
     with open(file) as fi:
-        for line in fi:
-            
+        text=readlines()
+        if check1 in text and check2 not in text:
+            print(file+' has a melanistic mask')
+        else:
+            print(file+' has no melanistic mask')
