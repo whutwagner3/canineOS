@@ -16,6 +16,7 @@ mv ShannonBoyko_All.nopheno.txt?sequence=1 ShannonBoyko_All.txt
 
 ##Using Plink and Plink2 to create MDS and PCA
 ../plink --bfile ShannonBoyko_All --recode --tab --out ShannonBoyko_All --noweb --dog
+../plink --bfile ShannonBoyko_All --recode vcf --out ShannonBoyko_all --noweb --dog
 ../plink --file ShannonBoyko_All --genome --noweb --dog --out ShannonBoyko_All
 ../plink --file ShannonBoyko_All --dog --read-genome ShannonBoyko_All.genome --cluster --mds-plot 2 --noweb --out ShannonBoyko_All
 ../plink2 --dog --bfile ShannonBoyko_All --pca 2 --out ShannonBoyko_All
