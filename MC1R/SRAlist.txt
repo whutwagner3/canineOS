@@ -1,0 +1,11 @@
+SRR8614058	German Shepherd Dog
+SRR8614071	Standard Poodle
+SRR8614070	Standard Poodle
+SRR8614074	Doberman
+SRR8614077	Doberman
+SRR8614069	Scottish Terrier
+SRR8614068	Scottish Terrier
+ERR2196023	Boxer
+ERR2196279	Pug
+ERR2196278	Pug
+ERR2196277	Pug
