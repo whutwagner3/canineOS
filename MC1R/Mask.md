@@ -34,7 +34,7 @@ AACCTCTTCCTCACCCTCATCATCTGCAACTCCATCATTGACCCCTTCATCTACGCCTTCCGCAGCCAGG
 AGCTC [C/T] 
 GAAAGACTCTCCAAGAGGTAGTGCTATGTTCCTGGTGA
 ```
-This is MC1R located at 63695249 - 63694296 in chromosome 5. 
+This is MC1R located at 63695249 - 63694296 in chromosome 5, canFam 3. 66692398 - ? in canFam 2 
 Dogs with masks have the one at least one copy of Met to Val (SNP A to G) at the first snp location and are non-homogenous for Arg to termination (SNP C to T) at the second snp
 
 ### Analysis with BBMAP
